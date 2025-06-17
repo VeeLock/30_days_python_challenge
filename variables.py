@@ -1,87 +1,70 @@
-print("hei")
-print(len('hello world'))
-print(type("hello world"))
-print(str(10))
-input("What is your name?: ")
+import math
 
-
-# Example of valid variable names
-# firstname
-# lastname
-# age
-# country
-# city
-# first_name
-# last_name
-# capital_city
-# _if  # if we want to use reserved word as a variable
-# year_2021
-# year2021
-# current_year_2021
-# birth_year
-# num1
-# num2
-
-# Variables in Python
-first_name = 'Vilde'
-last_name = 'Numme'
-country = 'Norway'
-city = 'Oslo'
-age = 31
-is_married = False
-skills = ['HTML', 'CSS', 'JS', 'React', 'Python']
-person_info = {
-    'firstname': 'Vilde',
-    'lastname': 'Numme',
-    'country': 'Norway',
-    'city': 'Oslo'
-}
-
-print("First Name:", first_name)
-print("First name length: ", len(first_name))
-print("Last name: ", last_name)
-print("Last name length: ", len(last_name))
-print("Country: ", country)
-print("City: ", city)
-print("Age: ", age)
-print("Married: ", is_married)
-print("Skills: ", skills)
-print("Person information: ", person_info)
-
-
-print(first_name, last_name, country, age, is_married)
-
-first_name = input("What is your name: ")
-age = input("How old are you? ")
-
-print(first_name)
-print(age)
-
-# int to float
-num_int = 10
-print("num_int", num_int)
-num_float = float(num_int)
-print("num_float:", num_float)
-
-# float to int
-gravity = 9.81
-print(int(gravity))
-
-# int to str
-num_int = 10
-print(num_int)
-num_str = str(num_int)
-print(num_str)
-
-# str to int or float
-num_str = "10.6"
-num_float = float(num_str)
-print("num_float", float(num_str))
-num_int = int(num_float)
-print("num_int", int(num_int))
-
-# str to list
+print("Day 2: 30 Days of python programming")
 first_name = "Vilde"
+last_name = "Numme"
+full_name = "Vilde Numme"
+country = "Norway"
+city = "Sørumsand"
+age = (int("31"))
+year = "1993"
+is_married = False
+is_light_on = True
+skills = ["html", "css", "python"]
+
+# Checking datatypes
+print(type(first_name))
+print(type(last_name))
+print(type(full_name))
+print(type(country))
+print(type(city))
+print(type(age))
+print(type(year))
+print(type(is_married))
+print(type(is_light_on))
+print(type(skills))
+
+# Length of first name vs last name
+print(len(first_name))
+print(len(last_name))
+
+# Declade 5 as num_one and 4 as num_two
+num_one = 5
+num_two = 4
+
+total = num_one + num_two
+print(total)
+
+diff = num_two - num_one
+print(diff)
+
+product = num_two * num_one
+print(product)
+
+division = num_one / num_two
+print(division)
+
+remainder = num_two % num_one
+print(remainder)
+
+exp = num_two ** num_one
+print(exp)
+
+floor_division = num_two // num_one
+print(floor_division)
+
+radius = 30
+area_of_circle = math.pi * radius ** 2
+print(area_of_circle)
+
+circum_of_circle = 2 * math.pi * radius
+print(circum_of_circle)
+
+first_name = input("What is your name? ")
 print(first_name)
-first_name_to_list = list(first_name)
-print(first_name_to_list)
+last_name = input("What's your last name?")
+print(last_name)
+country = input("Where are you from?")
+print(country)
+age = int(input("How old are you?"))
+print(age)
